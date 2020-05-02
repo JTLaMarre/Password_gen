@@ -25,8 +25,7 @@ if( inlcude_lowLetters === true){
   if (include_Numbers=== true){
     Possibilities.push(Numbers);
   }
-  JSON.stringify(Possibilities);
-  console.log(Possibilities);
+  
   
 //   if statement to redo password length if length is invalid
   if(password_length<8 || password_length>128){
