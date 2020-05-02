@@ -26,6 +26,10 @@ if( inlcude_lowLetters === true){
     Possibilities.push(Numbers);
   }
   
+  if(include_Numbers === false && inlcude_Specials === false && inlcude_lowLetters === false && inlcude_upLetters === false){
+      alert("no password criteria detected refreshing page")
+     window.location.href = 'index.html'
+  }
   
 //   if statement to redo password length if length is invalid
   if(password_length<8 || password_length>128){
