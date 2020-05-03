@@ -41,17 +41,19 @@ var generateBtn = document.querySelector("#generate");
 
 // // Write password to the #password input
 function writePassword() {
+  
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
+  console.log(document.getElementById(password));
 }
+
 
 function generatePassword(){
 
   var word= []
   for (var i = 0; i < password_length; i++) {
    var arrayKeys =Object.keys(Possibilities);
-   console.log(arrayKeys);
    var rn = Math.floor(Math.random()*arrayKeys.length);
    var randomArray = Possibilities[arrayKeys[rn]];
     var randomChar = randomArray[Math.floor(Math.random()*randomArray.length-1)];
